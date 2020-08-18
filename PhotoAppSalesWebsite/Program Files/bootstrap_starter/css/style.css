@@ -1,0 +1,148 @@
+body {
+  padding-top: 50px;
+}
+
+section{
+  padding: 40px 0 40px 0;
+}
+
+.em-text{
+  color: #1caa98 !important;
+}
+
+.jumbotron{
+  background:#1b222a url(../img/site_showcase_bg.jpg) no-repeat top center;
+  color: #fff;
+  height: 592px;
+  overflow:none;
+}
+/*
+The overflow property specifies what should happen if content overflows an element's box. 
+This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area. 
+Note: The overflow property only works for block elements with a specified height.
+*/
+.jumbotron h1{
+  margin-top: 60px;
+}
+
+.jumbotron p{
+  margin-top: 40px;
+}
+.jumbotron .app-btn{
+  width: 40%;
+  margin-right: 30px;
+}
+
+.jumbotron .showcase{
+  height: 75%;
+}
+.demo{
+  width: 100%;
+  padding: 3px;
+  border: 1px solid #ccc;
+}
+section#title-bar{
+  padding: 0;
+  margin: 0;
+  height: 80px;
+  background: #1caa98;
+  color: #fff;
+}
+
+.col-md-4{
+  margin-bottom: 20px;
+}
+section#title-bar h1{
+ margin-bottom: 20px;;
+}
+section#feature{
+  background: #1caa98;
+  color: #fff;
+  padding: 40px;
+  overflow: auto;
+}
+
+section#feature ul li{
+  font-size: 22px;
+  list-style: none;
+  line-height: 2.0em;/*removes the bullet numbering only*/
+}
+
+section#feature ul{
+  padding: 0;
+  margin: 0;
+}
+
+footer{
+  background: #333;
+  color: #fff;
+  padding: 30px 0 30px 0;
+}
+
+footer li{
+  float:left;
+  padding: 0 10px 0 10px;
+  list-style: none;
+}
+footer a{
+  color: #fff;
+}
+
+footer p{
+  float: right;
+}
+
+/*media queries*/
+@media(max-width: 1200px){
+  /*this is going to matter to anything below 1200px*/
+
+}
+@media(max-width: 991px){
+  .showcase{
+    display: none;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 990){
+  .jumbotron img.app-btn{
+    width: 30%;
+  }
+  .jumbotron{
+    height: 400px !important;
+    background-size: 100% 100%;
+  }
+  .jumbotron h1{
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 768px){
+  .jumbotron{
+    height: 350px !important;
+    background-size: 100% 100%;
+  }
+  .jumbotron h1{
+    margin-top: 10px;
+  }
+}
+
+@media(max-width: 500px){
+ /*for phones in particular*/
+ .jumbotron{
+  height: 450px !important;
+  background-image: none;
+  text-align: center;
+  } 
+  .jumbotron img.app-btn{
+    width: 60%;
+    margin: 0 auto 30px auto;/*auto pushes it to the middle*/
+  }
+  section#feature ul li{
+    font-size: 19px !important;
+  }
+  footer p{
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+  }
+}
